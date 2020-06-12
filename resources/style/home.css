@@ -1,33 +1,4 @@
-/* Basic Style */
-:root {
-    --title-color: #322153;
-    --primary-color: #34cb79;
-}
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    font-family: 'Roboto', sans-serif;
-}
-
-body {
-    background: #f0f0f5;
-    -webkit-font-smoothing: antialiased;
-}
-
-a {
-    text-decoration: none;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    color: var(--title-color);
-    font-family: 'Ubuntu', sans-serif;
-}
-
-/* Header Section  */
 #page-home {
     height: 100vh;
     background: url('../images/icones/home-background.svg') no-repeat;
@@ -127,24 +98,3 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
-@media (max-width: 900px) {
-    #page-home{
-        background-position-x: 70vw;
-    }
-    
-    #page-home .content {
-        align-items: center;
-        text-align: center;
-    }
-
-    #page-home header a { /*Colocando o header no bottom da página*/
-        position: absolute;
-        bottom: 48px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    
-    #page-home main {
-        align-items: center;
-    }
-}
