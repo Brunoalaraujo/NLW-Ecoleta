@@ -3,6 +3,7 @@
     width: 90%;
     max-width: 1100px;
 
+    /*Padrão para alinhamento de caixa pelo lado de fora da caixa*/
     margin: 0 auto;
 }
 
@@ -35,7 +36,7 @@
 form {
     background-color: white;
     
-    margin-top: 80px;
+    margin: 80px auto;
     padding: 64px;
 
     border-radius: 8px;
@@ -45,4 +46,87 @@ form {
     /*Para fazer com que a caixa não ultrapasse o max-width. Sem ela o padding é acrescentado ao width */
     box-sizing: border-box;
     
+}
+
+form h1 {
+    font-size: 36px;
+
+}
+
+form fieldset {
+    margin-top: 64px;
+    
+    border: 0;
+}
+
+form legend {
+    margin-bottom: 40px;
+}
+
+form legend h2 {
+    font-size: 24px;
+}
+
+form .field {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 24px;
+}
+
+form .field-group {
+    display: flex;
+
+}
+
+form input,
+form select {
+    background-color: #f0f0f5;
+
+    border: 0;
+    padding: 16px 24px;
+    font-size: 16px;
+
+    border-radius: 8px;
+
+}
+
+form select { /*codigo para resetar estilos aplicados de forma automatica na tag select pelo chrome e mozila */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+form label {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+form .field-group .field + .field { /* + é usado para selecinar imãos dentro do elemento */
+    margin-left: 24px;
+}
+
+form button {
+    width: 260px;
+    height: 56px;
+
+    background-color: var(--primary-color);
+    border-radius: 8px;
+
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+
+    border: 0;
+
+    margin-top: 40px;
+
+    transition: background-color 400ms;
+
+}
+
+form button:hover {
+    background-color: #2fb86e;
 }
